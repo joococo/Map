@@ -121,9 +121,11 @@ public class MapsActivity extends FragmentActivity implements
 
         // Add a marker in Sydney and move the camera
         //마커 추가
-        LatLng ds = new LatLng(37.65132619696229, 127.01612821175677);
-        mMap.addMarker(new MarkerOptions().position(ds).title("Duksung University"));
+        LatLng ds = new LatLng(37.652603, 127.015735);
+        LatLng ds2 = new LatLng(37.651975, 127.015981);
 
+        mMap.addMarker(new MarkerOptions().position(ds).title("Duksung University"));
+        mMap.addMarker(new MarkerOptions().position(ds2).title("Duksung University"));
         //카메라 이동
         mMap.moveCamera(CameraUpdateFactory.newLatLng(ds));
 
